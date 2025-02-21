@@ -29,11 +29,12 @@ function App() {
       }
 
       // POST to your backend
-      const res = await fetch('http://localhost:3000/bfhl', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: inputValue,
-      });
+    const res = await fetch('https://bfhl-backend-psi-three.vercel.app/bfhl', { 
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: inputValue,
+});
+
 
       if (!res.ok) {
         throw new Error('API request failed.');
