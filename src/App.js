@@ -29,7 +29,7 @@ function App() {
       }
 
       // POST to your backend
-      const res = await fetch('https://bfhl-backend-psi-three.vercel.app/bfhl', { // Update the URL to point to your local backend
+      const res = await fetch('http://localhost:3000/bfhl', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: inputValue,
