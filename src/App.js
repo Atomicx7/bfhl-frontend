@@ -29,7 +29,7 @@ function App() {
       }
 
       // POST to your backend
-      const res = await fetch('https://bfhl-backend-psi-three.vercel.app', {
+      const res = await fetch('http://localhost:3000/bfhl', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: inputValue,
@@ -68,16 +68,6 @@ function App() {
 
   return (
     <div style={{ width: '600px', margin: '40px auto', fontFamily: 'sans-serif' }}>
-      <h1 style={{
-        textAlign: 'center',
-        color: '#2D3748',
-        marginBottom: '24px',
-        fontSize: '20px',
-        fontWeight: '600'
-      }}>
-        Roll Number: 2237505
-      </h1>
-
       {/* API Input Section */}
       <div style={{ marginBottom: '20px' }}>
         <label style={{ fontWeight: 'bold', display: 'block', marginBottom: '5px' }}>
